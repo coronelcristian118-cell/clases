@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSP — Clase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-clase">
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">TSP</span>
+      <span class="brand-divider"></span>
+      <span class="brand-name">Trading Sin Pantallas</span>
+    </div>
+    <a href="programa.html" class="back-link">← Volver al programa</a>
+  </header>
+
+  <div class="player-wrap">
+    <div class="player-main">
+      <a href="programa.html" class="back-link">← Programa completo</a>
+
+      <div class="video-frame">
+        <video id="player" controls></video>
+      </div>
+
+      <h1 id="titulo">Cargando...</h1>
+
+      <div class="clase-meta">
+        <span id="modulo">—</span>
+        <span class="dot"></span>
+        <span id="duracion">—</span>
+      </div>
+
+      <p class="clase-descripcion" id="descripcion"></p>
+
+      <div class="clase-nav">
+        <button class="nav-btn" id="btn-anterior">← Clase anterior</button>
+        <button class="nav-btn" id="btn-siguiente">Siguiente clase →</button>
+      </div>
+    </div>
+
+    <aside class="player-side">
+      <h3>Todas las clases</h3>
+      <ul id="lista-clases"></ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> TSP — Trading Sin Pantallas</span>
+    <span class="muted">Material exclusivo para alumnos</span>
+  </footer>
+
+  <script src="js/clases.js"></script>
+  <script src="js/trading-bg.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>
